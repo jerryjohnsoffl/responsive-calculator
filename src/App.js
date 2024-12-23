@@ -1,13 +1,18 @@
 //import './App.css';
+import { useState } from 'react';
 import Numbers from './Numbers';
 
 function App() {
   let char=['C','+/-','%'];
   const op=["÷","×","-","+","="]
+  const [Display, SetDisplay]=useState("")
 
   return (
     <div className="App bg-off-white container max-w-md p-4">
-      <div className="h-1/4 w-full">Display</div>
+      <div className="h-1/4 w-full flex flex-col">
+        <div className="h-1/2 justify-end flex items-center mr-4 w-full text-right text-3xl">Operation</div>
+        <div className="h-1/2 justify-end flex items-center mr-4 w-full text-right text-5xl">{Display}</div>
+      </div>
       <div className="flex justify-center items-center">
         <div className="grid grid-cols-4">
           <div className="container col-span-3">

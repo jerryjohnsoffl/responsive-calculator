@@ -27,7 +27,9 @@ const Numbers = () => {
     return (
         <div className='grid grid-cols-3 gap-4 mt-4'>
             {displayNum}
-            <button className="flex justify-center items-center h-16 w-16 bg-white rounded-3xl"><img src={Icon} alt="" /></button>
+            <button className="flex justify-center items-center h-16 w-16 bg-white rounded-3xl">
+                <img src={Icon} alt="" />
+            </button>
         </div>
     )
 }
