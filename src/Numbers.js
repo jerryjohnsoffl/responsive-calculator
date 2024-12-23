@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from './assets/Icon.svg'
+import DelIcon from './assets/Icon.svg'
 
 const Numbers = () => {
     let num=[];
@@ -28,7 +28,7 @@ const Numbers = () => {
         <div className='grid grid-cols-3 gap-4 mt-4'>
             {displayNum}
             <button className="flex justify-center items-center h-16 w-16 bg-white rounded-3xl">
-                <img src={Icon} alt="" />
+                <img src={DelIcon} alt="" />
             </button>
         </div>
     )
