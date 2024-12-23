@@ -22,12 +22,12 @@ const Numbers = () => {
 
     arr2D.map((e)=> e.map((i)=> console.log(i)));
     const displayNum = arr2D.map((e)=> e.map((item)=> {
-        return(<button className='flex justify-center items-center h-9 bg-white'>{item}</button>)
+        return(<button className='flex justify-center items-center w-16 h-16 bg-white rounded-3xl font-normal text-2xl'>{item}</button>)
     }))
     return (
-        <div className='grid grid-cols-3 gap-4 m-4'>
+        <div className='grid grid-cols-3 gap-4 mt-4'>
             {displayNum}
-            <button className="flex justify-center items-center h-9 bg-white"><img src={Icon} alt="" /></button>
+            <button className="flex justify-center items-center h-16 w-16 bg-white rounded-3xl"><img src={Icon} alt="" /></button>
         </div>
     )
 }
