@@ -1,7 +1,7 @@
 import React from 'react'
 import DelIcon from './assets/Icon.svg'
 
-const Numbers = () => {
+const Numbers = ({handleNumberClick}) => {
     let num=[];
     for(let i=1;i<10;i++){
         num.push(i);
@@ -18,11 +18,8 @@ const Numbers = () => {
     const newRow=[".",0];
     arr2D.push(newRow);
 
-    console.log(arr2D);
-
-    arr2D.map((e)=> e.map((i)=> console.log(i)));
     const displayNum = arr2D.map((e)=> e.map((item)=> {
-        return(<button className='flex justify-center items-center w-16 h-16 bg-white rounded-3xl font-normal text-2xl'>{item}</button>)
+        return(<button onClick={()=>handleNumberClick(item)} className='flex justify-center items-center w-16 h-16 bg-white rounded-3xl font-normal text-2xl'>{item}</button>)
     }))
     return (
         <div className='grid grid-cols-3 gap-4 mt-4'>
