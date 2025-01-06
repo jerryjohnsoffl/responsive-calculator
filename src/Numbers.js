@@ -1,7 +1,7 @@
 import React from 'react'
 import DelIcon from './assets/Icon.svg'
 
-const Numbers = ({handleNumberClick}) => {
+const Numbers = ({handleNumberClick, handleDelete}) => {
     let num=[];
     for(let i=1;i<10;i++){
         num.push(i);
@@ -24,7 +24,7 @@ const Numbers = ({handleNumberClick}) => {
     return (
         <div className='grid grid-cols-3 gap-4 mt-4'>
             {displayNum}
-            <button className="flex justify-center items-center h-16 w-16 bg-white rounded-3xl">
+            <button onClick={()=> handleDelete()} className="flex justify-center items-center h-16 w-16 bg-white rounded-3xl">
                 <img src={DelIcon} alt="" />
             </button>
         </div>

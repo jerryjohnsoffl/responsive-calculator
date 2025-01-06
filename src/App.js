@@ -9,13 +9,23 @@ function App() {
   const [Display, SetDisplay]=useState("")
   const [Operation, SetOperation]=useState("")
 
-  const handleClear = ()=> {
-    SetDisplay("");
-    SetOperation("");
+  const handleSpecialOps = (btn)=> {
+    if(btn==="C"){
+      SetDisplay("")
+      SetOperation("")
+    } else if(btn==="%"){
+      SetDisplay((prev)=> prev? (parseFloat(prev)/100).toString() : "");
+    } else if(btn==="+/-"){
+      SetDisplay((prev)=> prev? (prev.startsWith("-")? prev.slice(1) : "-" + prev) : "")
+    }
   }
 
   const handleNumberClick = (num)=> {
     SetDisplay((prev)=> prev + num)
+  }
+
+  const handleDelete = () => {
+    SetDisplay((prev)=> prev.slice(0,-1))
   }
 
   const handleOperator = (op)=> {
@@ -74,9 +84,12 @@ function App() {
         <div className="grid grid-cols-4">
           <div className="container col-span-3">
             <div className="grid grid-cols-3 gap-4">
-              {char.map((i)=> i==='C'? <button onClick={handleClear} className='flex justify-center items-center h-16 w-16 bg-dull-white rounded-3xl font-normal text-2xl'>{i}</button> : <button className='flex justify-center items-center h-16 w-16 bg-dull-white rounded-3xl font-normal text-2xl'>{i}</button>)}
+              {char.map((i)=> <button onClick={()=> handleSpecialOps(i)} className='flex justify-center items-center h-16 w-16 bg-dull-white rounded-3xl font-normal text-2xl'>{i}</button>)}
             </div>
-            <Numbers handleNumberClick={handleNumberClick} />
+            <Numbers 
+            handleNumberClick={handleNumberClick}
+            handleDelete={handleDelete}
+             />
           </div>
           <div className="grid grid-cols-1 ml-4 gap-4">
             {op.map((i)=> i==='='? <button onClick={handleEquals} className='flex justify-center items-center h-16 w-16 text-white bg-blue-600 rounded-3xl font-normal text-3xl'>{i}</button> : <button onClick={()=> handleOperator(i)} className='flex justify-center items-center h-16 w-16 text-white bg-blue-600 rounded-3xl font-normal text-3xl'>{i}</button>)}
