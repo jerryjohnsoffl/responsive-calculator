@@ -71,7 +71,7 @@ function App() {
       <div className="h-1/4 w-full flex flex-col relative">
         <div className="h-1/2 justify-end flex items-center mr-4 w-full text-right text-3xl">{Operation}</div>
         <div className="h-1/2 justify-end flex items-center mr-12 w-full text-right text-5xl">{Display || 0}</div>
-        <div className="absolute bg-white left-1/2 -translate-x-1/2 px-2.5 rounded-full w-14 h-7 container flex items-center justify-around space-x-2">
+        <div className="absolute bg-white left-1/2 -translate-x-1/2 px-2.5 rounded-full w-14 h-7 container hidden items-center justify-around space-x-2">
           <div className="h-full w-1/2">
             <img src={Light} alt="" className='h-full' />
           </div>
