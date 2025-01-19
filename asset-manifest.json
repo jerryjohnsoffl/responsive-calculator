@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jerryjohnsoffl/responsive-calculator/static/css/main.c052e696.css",
+    "main.js": "/jerryjohnsoffl/responsive-calculator/static/js/main.aa42f877.js",
+    "static/media/Light.svg": "/jerryjohnsoffl/responsive-calculator/static/media/Light.8aba616b6cfae1d25847d73140e0bb90.svg",
+    "index.html": "/jerryjohnsoffl/responsive-calculator/index.html",
+    "static/media/Icon.svg": "/jerryjohnsoffl/responsive-calculator/static/media/Icon.b3bbcc5ee8a61a5c3ef11ae736fd0f57.svg",
+    "main.c052e696.css.map": "/jerryjohnsoffl/responsive-calculator/static/css/main.c052e696.css.map",
+    "main.aa42f877.js.map": "/jerryjohnsoffl/responsive-calculator/static/js/main.aa42f877.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c052e696.css",
+    "static/js/main.aa42f877.js"
+  ]
+}
