@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/responsive-calculator/static/css/main.77dc961d.css",
-    "main.js": "/responsive-calculator/static/js/main.45c8b916.js",
+    "main.css": "/responsive-calculator/static/css/main.a1217343.css",
+    "main.js": "/responsive-calculator/static/js/main.488e91d6.js",
     "static/media/Light.svg": "/responsive-calculator/static/media/Light.8aba616b6cfae1d25847d73140e0bb90.svg",
     "index.html": "/responsive-calculator/index.html",
-    "static/media/Icon.svg": "/responsive-calculator/static/media/Icon.b3bbcc5ee8a61a5c3ef11ae736fd0f57.svg",
-    "main.77dc961d.css.map": "/responsive-calculator/static/css/main.77dc961d.css.map",
-    "main.45c8b916.js.map": "/responsive-calculator/static/js/main.45c8b916.js.map"
+    "static/media/Dark.svg": "/responsive-calculator/static/media/Dark.5689d89c3c2f19fd620c42461559f582.svg",
+    "static/media/Icon-w.svg": "/responsive-calculator/static/media/Icon-w.af7fd1c6936280ddfb3db13c63d0368b.svg",
+    "static/media/Icon-b.svg": "/responsive-calculator/static/media/Icon-b.b3bbcc5ee8a61a5c3ef11ae736fd0f57.svg",
+    "main.a1217343.css.map": "/responsive-calculator/static/css/main.a1217343.css.map",
+    "main.488e91d6.js.map": "/responsive-calculator/static/js/main.488e91d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.77dc961d.css",
-    "static/js/main.45c8b916.js"
+    "static/css/main.a1217343.css",
+    "static/js/main.488e91d6.js"
   ]
 }
