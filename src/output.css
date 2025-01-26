@@ -769,6 +769,11 @@ video {
   background-color: rgb(23 23 28 / var(--tw-bg-opacity, 1));
 }
 
+.bg-dark-btn {
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 47 56 / var(--tw-bg-opacity, 1));
+}
+
 .bg-dull-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(78 80 95 / var(--tw-bg-opacity, 1));
@@ -797,11 +802,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-dark-btn {
-  --tw-bg-opacity: 1;
-  background-color: rgb(46 47 56 / var(--tw-bg-opacity, 1));
 }
 
 .p-4 {
@@ -841,24 +841,19 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
 .text-dull-dark {
   --tw-text-opacity: 1;
   color: rgb(78 80 95 / var(--tw-text-opacity, 1));
 }
 
-.text-dull-white {
-  --tw-text-opacity: 1;
-  color: rgb(210 211 218 / var(--tw-text-opacity, 1));
-}
-
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .transition-all {
