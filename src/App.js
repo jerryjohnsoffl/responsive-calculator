@@ -76,9 +76,9 @@ function App() {
         <div className={`absolute left-1/2 -translate-x-1/2 px-2.5 rounded-full w-14 h-7 container flex items-center justify-around space-x-2 ${IsDarkMode? "bg-toggle": "bg-white"}`}>
           <label htmlFor="check" className='h-full w-full relative flex items-center justify-between rounded-full'>
             <input type="checkbox" id='check' className='sr-only peer' onChange={()=> SetIsDarkMode((prev)=> !prev)}/>
-            <span className='w-3/5 h-4/5 bg-dull-white absolute rounded-full left-1 top-1/2 -translate-x-1/2 -translate-y-1/2 peer-checked:left-8 transition-all duration-300'></span>
-            <img src={Dark} className='h-3/5 w-2/5' alt="" />
+            <span className='w-3/5 h-4/5 bg-dull-white absolute rounded-full right-1 top-1/2 translate-x-1/2 -translate-y-1/2 peer-checked:right-8 peer-checked:bg-dull-dark transition-all duration-300'></span>
             <img src={Light} className='h-3/5 w-2/5' alt="" />
+            <img src={Dark} className='h-3/5 w-2/5' alt="" />
           </label>
         </div>
       </div>
