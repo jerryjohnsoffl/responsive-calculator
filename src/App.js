@@ -86,7 +86,7 @@ function App() {
         <div className="grid grid-cols-4">
           <div className="container col-span-3">
             <div className="grid grid-cols-3 gap-4">
-              {char.map((i)=> <button onClick={()=> handleSpecialOps(i)} className={`flex justify-center items-center h-16 w-16 bg-dull-white rounded-3xl font-normal text-2xl ${IsDarkMode ? "bg-dull-dark text-white":"bg-dull-white"}`}>{i}</button>)}
+              {char.map((i)=> <button onClick={()=> handleSpecialOps(i)} className={`flex justify-center items-center h-16 w-16 rounded-3xl font-normal text-2xl ${IsDarkMode ? "bg-dull-dark text-white":"bg-dull-white"}`}>{i}</button>)}
             </div>
             <Numbers 
             handleNumberClick={handleNumberClick}
